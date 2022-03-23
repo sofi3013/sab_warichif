@@ -16,14 +16,14 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <link rel="stylesheet" href="styles.css">
-        <title>Kranta</title>
+        <title>Présentation de la Makaranta</title>
     </head>
     <body  style="background: url('femme-assise-lecture-dans-coran_23-2147794169.webp') center/cover fixed;">
         <!-- En-tête -->
         <header class="my-1 py-4">
             <nav class="navbar navbar-expand-md bg-light navbar-light opacity-75 border-bottom border-5 border-primary fixed-top">
                 <div class="container">
-                    <a href="#" class="navbar-brand fw-bold text-body">
+                    <a href="index.html" class="navbar-brand fw-bold text-body">
                         <img src="580b585b2edbce24c47b2abd.png" alt="ima coran" style="width: 70px;"> Abououbeida
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expended="false" aria-label="Toggle navigation">
@@ -32,13 +32,19 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Accueil</a>
+                                <a class="nav-link" href="index.html">Accueil</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Groupes</a>
+                                <a class="nav-link" href="inscription.html">inscription</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Comptabilité</a>
+                                <a class="nav-link" href="goupes.html">Base de donnée</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cours.html">Cours</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="caisse.html">Caisse</a>
                             </li>
                         </ul>
                     </div>
@@ -50,11 +56,11 @@
         <section id="overlay">
             <div class="container py-3">
                 <div class="row py-5 text-center">
-                    <div class="col-12 col-md-6 mt-5 pt-5">
+                    <div class="col-12 col-md-2 mt-5 pt-5">
                     </div>
                         
-                    <div class="col-12 col-md-6 ">
-                        <h1 class="text-light"><i class="bi bi-moon-stars-fill mx-5 text-primary"></i>Abououbeida<i class="bi bi-moon-stars-fill mx-5 text-primary"></i></h1>
+                    <div class="col-12 col-md-10 ">
+                        <h1 class="text-light"><i class="bi bi-moon-stars-fill mx-5 text-light"></i>Abououbeida<i class="bi bi-moon-stars-fill mx-5 text-light"></i></h1>
                         <p class="text-light">
                             Ecole Coranique située au quartier Bibiel <br>
                             Dirigée par Malama <span class="fw-bold">Oumma</span> 
@@ -248,47 +254,46 @@
                     <h1 class="text-light text-center">Intéressée par notre Makaranta ?</h1>
                     <h4 class="text-light text-center">Demandez une inscription en ligne</h4>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="width: 200px; margin: auto; margin-top: 50px;">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formulairedemandeinscription" style="width: 200px; margin: auto; margin-top: 50px;">
                         Demande d'inscription
                     </button>
                     
                     <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="formulairedemandeinscription" tabindex="-1" aria-labelledby="formulairedemandeinscription" aria-hidden="true">
                         <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <h5 class="modal-title" id="formulairedemandeinscription">Demande d'inscription</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                                 <form>
                                     <div class="mb-3">
-                                        <label for="email" class="form-label">Email address</label>
-                                        <input type="email" class="form-control" id="email aria-describedby="emailHelp">
-                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                        <label for="nom" class="form-label">Votre Nom ?</label>
+                                        <input type="text" class="form-control" id="nom" aria-describedby="nom">
                                     </div>
                                     <div class="mb-3">
-                                        <label for="number" class="form-label">Numéro de Téléphone</label>
-                                        <input type="number" class="form-control" id="number aria-describedby="umberHelp">
-                                        <div id="numberHelp" class="form-text">We'll never share your Number with anyone else.</div>
+                                        <label for="prenom" class="form-label">Votre Prénom ?</label>
+                                        <input type="text" class="form-control" id="prenom" aria-describedby="prenom">
                                     </div>
                                     <div class="mb-3">
-                                        <label for="age" class="form-label">Votre âge</label>
-                                        <input type="age" class="form-control" id="age aria-describedby="umberHelp">
+                                        <label for="tel" class="form-label">Numéro de Téléphone ?</label>
+                                        <input type="text" class="form-control" id="tel" aria-describedby="tel">
                                     </div>
                                     <div class="mb-3">
                                         <label for="quartier" class="form-label">Votre quartier</label>
-                                        <input type="quartier" class="form-control" id="quartier aria-describedby="umberHelp">
+                                        <input type="quartier" class="form-control" id="quartier" aria-describedby="umberHelp">
+                                    </div>
+                                    <div>Choix d'un groupe </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="radio" class="form-check-input" name="groupe" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Group A</label>
                                     </div>
                                     <div class="mb-3 form-check">
                                         <input type="radio" class="form-check-input" name="groupe" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1">J'ai lu les conditions</label>
+                                        <label class="form-check-label" for="exampleCheck1">Goupe B</label>
                                     </div>
-                                    <div class="mb-3 form-check">
-                                        <input type="radio" class="form-check-input" name="groupe" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1">J'ai lu les conditions</label>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                                    <button type="submit" class="btn btn-primary">S'inscrire</button>
                                   </form>
                             </div>
                         </div>
